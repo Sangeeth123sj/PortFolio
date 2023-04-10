@@ -307,10 +307,14 @@ header {
 
   .cta {
 	display: inline-block;
-	background-color: #593c8f;
-	color: #fff;
+	color: #593c8f;
+	background-color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
+  }
+  .cta:hover {
+	color: #fff;
+	background-color: #593c8f;
   }
   .genres {
 	padding: 50px 0;
