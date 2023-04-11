@@ -6,8 +6,11 @@
     <title>Blog Title</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog_style.css">
+    <!-- code block styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
 </head>
-<body>
+<body onload="Prism.highlightAll()">
     <header class="">
 		<div class="navbar">
 			<div class="logo">
@@ -56,10 +59,49 @@
             <p>Once you've chosen a real-time notification service, the next step is to set up the service in your React application. This typically involves installing the service's SDK and configuring it with your app's credentials.</p>
 
             <p><strong>Create a Notification Component</strong></p>
+            <!-- code block -->
+            <!-- <pre>
+              <code class="language-javascript">
+                function greeting() {
+                  console.log("Hello, world!");
+                }
+            
+                greeting();
+              </code>
+            </pre> -->
+            
 
             <p>After setting up the real-time notification service, the next step is to create a notification component in your React application. This component will be responsible for displaying the notifications to your users. You can customize this component to match your app's design and style.</p>
 
+
+              <!-- Code block 1: Example code for notification component -->
+                  <pre>
+                    <code class="language-javascript">
+              function NotificationComponent(props) {
+                const { message, type } = props;
+                const classNames = ['notification'];
+                if (type === 'error') {
+                    classNames.push('notification--error');
+                } else {
+                    classNames.push('notification--success');
+                }
+                return (
+                    <div className={classNames.join(' ')}>
+                        {message}
+                    </div>
+                );
+              }
+                    </code>
+                </pre>
             <p><strong>Send Notifications</strong></p>
+            <!-- codeblock -->
+            <pre><code class="language-javascript">
+              // Send notification using the service's API
+              notificationService.sendNotification(userId, {
+                title: "New Message",
+                message: "You have a new message from John Doe"
+              });
+              </code></pre>
 
             <p>Once you've set up the notification component, you can start sending notifications to your users. You can send notifications from your server or through the real-time notification service's API.</p>
 
