@@ -32,15 +32,13 @@ header {
 	color: #333;
   }
   
-  ul {
-	list-style-type: none;
-  }
+  
   
   h2 {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: rgb(198, 191, 191);
+	color: #292c33;
   }
 
   /* h1,p{
@@ -328,19 +326,7 @@ header {
 	  color:grey;
   }
   
-  .genres ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 20px;
-  }
-  
-  .genres li {
-	margin: 10px;
-	flex: 0 0 calc(33.33% - 20px);
-	max-width: calc(33.33% - 20px);
-	text-align: center;
-  }
+
   
 
   .grid {
@@ -382,11 +368,7 @@ header {
 	margin-bottom: 30px;
 	color: #593c8f;
   }
-  
-  .recent-summaries ul {
-	display: flex;
-	justify-content: center;
-  }
+ 
   
   .exchange-books-title {
 	  color:grey;
@@ -610,12 +592,12 @@ header {
 	  }
 	  
 	  ul {
-		list-style: none;
+		/* list-style: none; */
 		margin: 0;
 		padding: 0;
 	  }
 	  
-	  ul li {
+	  .footer-content ul li {
 		display: inline-block;
 		margin-right: 20px;
 	  }
@@ -626,7 +608,7 @@ header {
 	  
 	  ul li a {
 		color: white;
-		text-decoration: none;
+		/* text-decoration: none; */
 	  }
 	  
   
